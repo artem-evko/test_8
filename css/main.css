@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins',sans-serif;
+    background-color: #343A40;
+}
+.navbar-brand img{
+    width: 80px;
+    height: 80px;
+}
+
+.navbar-nav li{
+    padding-right:20px;
+}
+
+.nav-link{
+    font-size: 1.1rem !important;
+}
+
+.carousel-inner{
+    
+    height: 500px;
+}
+
+.carousel-inner img{
+    transform: translateY(-30%);
+    height: 100%;
+}
+
+@media (min-width: 1100px) {
+    .carousel-inner img {
+        width: 100%;
+    }
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    text-shadow: 1px 1px 10px #000;
+}
+@media (max-width: 450px) {
+    .carousel-caption .display-2 {
+        font-size: 3em;
+    }
+}
+
+.jumbotron{
+   padding: 1em; 
+   border-radius: 0;
+   width: 70%;
+   margin: 0 auto;
+   margin-top: 20px;
+}
+
+.padding{
+    padding-bottom: 2em;
+}
+
+.alert{
+    width: 75%;
+    margin:0 auto;
+    padding-top: 2em;
+}
+
+.alert hr{
+    border-top: 2px solid f0f0f0;
+    width: 95%;
+    margin-top: 0.3em;
+    margin-bottom:1 em;
+}
+.footer{
+    width: 100%;
+}
+.tableAndForm:nth-child(1) {
+    order: 2;
+}
+.tableAndForm:nth-child(2) {
+    order: 1;
+}
+
+/* Медиа-запрос для мобильных экранов (максимальная ширина 768px) */
+@media (max-width: 768px) {
+    .tableAndForm > #table {
+        order: 2;
+    }
+    .tableAndForm > #form {
+        order: 1;
+    }
+}
